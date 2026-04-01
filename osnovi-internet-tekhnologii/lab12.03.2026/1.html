@@ -1,17 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<p style="font-size:26px">Закладки: <br>
+<a href="#C1" target="_blank">Аксіома Дедекінда</a><br>
+<a href="#C2" target="_blank">Польові аксіоми</a></p>
+
+<link rel="stylesheet" href="styles.css">
 <title>Аксіоми дійсних чисел</title>
 </head>
 <body>
 
 <h1 style="font-size:42px">Аксіоми дійсних чисел</h1>
-<p style="font-size:32px">Аксіоми дійсних чисел визначають їх як впорядковане поле, що має властивість неперервності.<br>
+<p style="font-size:32px"><b><em>Аксіоми дійсних чисел</em> визначають їх як впорядковане поле, що має властивість неперервності.<br>
 Вони поділяються на три основні групи: польові (арифметика), аксіоми порядку (нерівності)<br> 
-та аксіома повноти (неперервність/Дедекінда), що гарантує відсутність «прогалин» на числовій прямій</p>
+та аксіома повноти <small>(неперервність/Дедекінда)</small>, що <strong>гарантує відсутність «прогалин» на числовій прямій</strong></b></p>
 
-<p style="font-size:32px">Аксіома Дедекінда: Якщо множину дійсних чисел розбити на два класи так, що кожне число з A менше<br>
+<p id="C1" style="font-size:32px"><i><sup>Аксіома Дедекінда:</sup> <sub>Якщо множину дійсних чисел розбити</sub> на два класи так, <ins>що кожне число з A менше</ins><br>
 будь-якого числа з B, то існує число c, яке розділяє ці класи.<br>
-Альтернативне формулювання (Вейєрштрасса): Будь-яка обмежена зверху непуста множина дійсних чисел має точну верхню межу (супремум).</p>
+<del>Альтернативне формулювання (Вейєрштрасса)</del>: <mark>Будь-яка обмежена зверху непуста множина дійсних чисел має точну верхню межу (супремум).</mark> </i></p>
+<a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%B9%D0%B5%D1%80%D1%88%D1%82%D1%80%D0%B0%D1%81%D1%81,_%D0%9A%D0%B0%D1%80%D0%BB">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbAyN_04h-BThiSUliiMn-MeS8VhDvw1IwFoppfPaPGkrD_VyQWseMH891T9H3tV4li3cx5NANMHUqp1IA6BlQdzYjBt6mGUQ76DOi-A&s=10" alt="Karl Weierstrass"></a>
+<ol style="font-size:32px">
+  <li>
+    <a id="C2" href="https://uk.wikipedia.org/wiki/Поле_(алгебра)">Польові аксіоми (арифметика)</a>
+    
+    <ol>
+      <li>Комутативність додавання та множення</li>
+      <li>Асоціативність додавання та множення</li>
+      <li>Існування нейтральних елементів</li>
+    </ol>
+  </li>
+  
+  <li>
+    <a href="https://uk.wikipedia.org/wiki/Впорядковане_поле">Аксіоми порядку</a>
+  </li>
+  
+  <li>
+    <a href="https://uk.wikipedia.org/wiki/Аксіома_неперервності_Дедекінда">Аксіома повноти</a>
+  </li>
+</ol>
+<ul>
+      <li>Комутативність додавання: \[ a + b = b + a \]</li>
+      <li>Асоціативність додавання: \[ (a + b) + c = a + (b + c) \]</li>
+      <li>Існування нейтрального елемента (нуля): \[ \exists 0 \in \mathbb{R} : a + 0 = a \]</li>
+      <li>Існування протилежного елемента: \[ \forall a \in \mathbb{R}, \exists (-a) : a + (-a) = 0 \]</li>
+      <li>Комутативність множення: \[ a \cdot b = b \cdot a \]</li>
+      <li>Асоціативність множення: \[ (a \cdot b) \cdot c = a \cdot (b \cdot c) \]</li>
+      <li>Існування одиничного елемента: \[ \exists 1 \in \mathbb{R} : a \cdot 1 = a \]</li>
+      <li>Існування оберненого елемента: \[ \forall a \neq 0, \exists a^{-1} : a \cdot a^{-1} = 1 \]</li>
+      <li>Дистрибутивність: \[ a \cdot (b + c) = a \cdot b + a \cdot c \]</li>
+      <li>Аксіома повноти (існування супремума): \[ \forall A \subset \mathbb{R}, A \neq \emptyset, \exists \sup A \in \mathbb{R} \]</li>
+    </ul>
 </body>
 </html>

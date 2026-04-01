@@ -1,0 +1,55 @@
+<!DOCTYPE html> <!-- Оголошення типу документа: HTML5 -->
+<html lang="uk"> <!-- Вказує, що сторінка українською мовою -->
+<head>
+<meta charset="UTF-8"> <!-- Кодування символів: підтримка українських літер -->
+<title>Формули з MathJax</title> <!-- Заголовок сторінки у вкладці браузера -->
+<!-- Підключення бібліотеки Polyfill для підтримки сучасних можливостей JS -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+<!-- Підключення MathJax: саме він відображає формули -->
+<script id="MathJax-script" async 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+<style>
+  /* Загальні стилі для сторінки */
+  body { font-family: Arial, sans-serif; }
+
+  /* Клас для блоку з формулою */
+  .formula-block {
+    background-color: #f0f8ff; /* Світло-блакитний фон */
+    padding: 10px;             /* Внутрішні відступи */
+    margin: 15px auto;         /* Зовнішні відступи та вирівнювання по центру */
+    text-align: center;        /* Вирівнювання тексту по центру */
+    border-radius: 8px;        /* Закруглені кути */
+  }
+
+  /* Стилі для таблиці */
+  table {
+    margin: auto;              /* Вирівнювання таблиці по центру */
+    border-collapse: collapse; /* Об'єднання меж комірок */
+  }
+
+  /* Стилі для комірок таблиці */
+  td {
+    padding: 10px;             /* Внутрішні відступи */
+    border: 1px solid #ccc;    /* Сіра рамка навколо комірки */
+    text-align: center;        /* Вирівнювання тексту по центру */
+  }
+
+  /* Ефект при наведенні на рядок таблиці */
+  tr:hover { background-color: #eee; }
+</style>
+</head>
+
+<body>
+<h1>Формули з MathJax</h1> <!-- Основний заголовок сторінки -->
+
+<div class="formula-block">
+\[a^2 + b^2 = c^2\]
+</div>
+<table>
+    <tr><td>\(\frac{d}{dx} \{x^2\}=2x\)</td></tr>
+    <tr><td>When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</td></tr>
+</table>

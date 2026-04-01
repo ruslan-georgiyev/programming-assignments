@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.ruslan {
+  text-align: center;
+  color: red;
+
+}
+.ruslan2{
+    color:blueviolet;
+    background-color: aquamarine;
+}
+p.three {
+  border-style: dotted;
+  border-color: blue;
+}
+/* table, th, td {
+  border: 1px solid rgb(45, 39, 165);
+  border-collapse: collapse;
+   border-radius: 12px;
+
+}
+th, td {
+  padding-top: 10px;
+  padding-bottom: 60px;
+  padding-left: 100px;
+  padding-right: 40px;
+}
+table {
+  border-spacing: 30px;
+} */
+</style>
+
+</head>
+<body>
+<table><tr><td><img src="19.03.png" alt="Image" style="width:400px;height:180px"></p></td>
+<td><table style="width:400px;height:180px">
+  
+    <tr >
+    <th class="ruslan" colspan="2">1</th>
+    <!-- <th>2</th> -->
+    <th>3</th>
+    <th rowspan="2">4</th>
+  </tr>
+  <tr>
+    <td class="ruslan" rowspan="3">5</td>
+    <td class="ruslan" rowspan="2" colspan="2">6</td>
+    <!-- <td>7</td> -->
+    <!-- <td>8</td> -->
+  </tr>
+    <tr>
+    <!-- <td>9</td> -->
+    <!-- <td>10</td>
+    <td class="ruslan2">11</td> -->
+    <td>12</td>
+  </tr>
+    <tr class="ruslan2">
+    <!-- <td>13</td> -->
+    <td>14</td>
+    <td>15</td>
+    <td>16</td>
+  </tr>
+
+</table></td>
+
+</tr></table>
+
+
+<title>Розклад занять</title>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  th, td {
+    border: 2px solid black;
+    padding: 8px;
+  }
+
+  .group-header {
+    background-color: #004080;
+    color: white;             
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  .empty {
+    border-top: none; 
+    border-left: none;
+    border-right: none;
+  }
+
+  tbody tr:hover td {
+    background-color: #e6f7ff;
+    cursor: default;
+  }
+
+  .bg-gray {
+    background-color: #c0c0c0;
+    text-align: center;
+  }
+
+  tbody tr:hover td.bg-gray{
+    background-color: #d9d9d9;
+  }
+
+
+  .align{
+    text-align: right;
+  }
+
+  .subject {
+    text-align: center;
+    border-right: none; 
+  }
+
+
+  .class {
+    text-align: right; 
+    vertical-align: bottom; 
+    border-left: none;      
+    width: 30px;
+    color: #d93025;
+    font-weight: bold;    
+  }
+</style>
+</head>
+<body>
+
+<table>
+  <caption>Розклад занять на понеділок</caption>
+  
+  <tbody>
+    <tr>
+      <td rowspan="6" class="bg-gray">П<br>О<br>Н<br>Е<br>Д<br>І<br>Л<br>О<br>К</td>
+      <td class="bg-gray">I пара</td>
+      <td class="bg-gray align">8:00<br>9:20</td>
+      <td class="subject">Лінійна алгебра<br>доц.Білозерова<br>л. з 1 по 4 тиж.</td>
+      <td class="class">46</td>
+    </tr>
+    <tr>
+      <td class="bg-gray">II пара</td>
+      <td class="bg-gray align">9:30<br>10:50</td>
+      <td class="subject">Анг.мова<br>доц.Кузнєцова<br>прак.з 1 по 12тиж.</td>
+      <td class="class">46</td>
+    </tr>
+    <tr>
+      <td class="bg-gray">III пара</td>
+      <td class="bg-gray align">11:20<br>12:40</td>
+      <td class="subject">Аналітична геометрія<br>Соловьов<br>прак.</td>
+      <td class="class">46</td>
+    </tr>
+    <tr>
+      <td class="bg-gray">IV пара</td>
+      <td class="bg-gray align">12:50<br>14:10</td>
+      <td class="subject">Аналітична геометрія<br>проф.Кіосак<br>л.</td>
+      <td class="class">46</td>
+    </tr>
+    <tr>
+      <td class="bg-gray">V пара</td>
+      <td class="bg-gray align">14:20<br>15:40</td>
+      <td class="subject"></td>
+      <td class="class"></td>
+    </tr>
+    <tr>
+      <td class="bg-gray">VI пара</td>
+      <td class="bg-gray align">15:50<br>17:10</td>
+      <td class="subject"></td>
+      <td class="class"></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
